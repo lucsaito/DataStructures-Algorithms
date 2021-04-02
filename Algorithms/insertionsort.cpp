@@ -1,6 +1,7 @@
 //
 // Created by Lucas on 25/03/21.
-// This is an insertion sort algorithm using std::vector as argument
+//
+// This is an insertion sort algorithm using std::vector<int> as parameter
 //
 
 #include <iostream>
@@ -8,9 +9,8 @@
 
 std::vector<int> ReadInput() {
     size_t n;
-    std::vector<int> array;
     std::cin >> n;
-    array.resize(n);
+    std::vector<int> array;
     for (size_t i = 0; i < n; i++) {
         std::cin >> array[i];
     }
